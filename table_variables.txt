@@ -1,0 +1,183 @@
+Forest Inventory Database Table Variables
+======================================
+
+Table: all_pp_landcover
+-----------------------
+- juris_id (TEXT)
+- nfi_plot (INTEGER)
+- poly_id (TEXT)
+- sample_date (TEXT)
+- info_date (TEXT)
+- info_source (TEXT)
+- model_yr (REAL)
+- poly_area (REAL)
+- land_base (TEXT)
+- land_cover (TEXT)
+- land_pos (TEXT)
+- veg_type (TEXT)
+- density_cl (TEXT)
+- stand_stru (TEXT)
+- soil_moist (TEXT)
+- devel_stage (TEXT)
+
+Table: all_pp_poly_summ
+-----------------------
+- juris_id (TEXT)
+- nfi_plot (INTEGER)
+- poly_id (TEXT)
+- vol (INTEGER)
+- vol_merch (INTEGER)
+- closure (INTEGER)
+- site_age (INTEGER)
+- site_height (REAL)
+- site_index (REAL)
+- biomass_stem_wood (REAL)
+- biomass_stem_bark (REAL)
+- biomass_branches (REAL)
+- biomass_foliage (REAL)
+- biomass_total_live (REAL)
+- biomass_total_dead (REAL)
+
+Table: all_pp_std_layer_disturbance
+-----------------------------------
+- juris_id (TEXT)
+- nfi_plot (INTEGER)
+- poly_id (TEXT)
+- layer_rk (INTEGER)
+- sample_date (TEXT)
+- info_date (TEXT)
+- info_source (TEXT)
+- dist_agent (TEXT)
+- dist_yr (INTEGER)
+- dist_perct (INTEGER)
+- mort_perct (INTEGER)
+- mort_basis (TEXT)
+- agent_type (TEXT)
+
+Table: all_pp_std_layer_header
+------------------------------
+- juris_id (TEXT)
+- nfi_plot (INTEGER)
+- poly_id (TEXT)
+- sample_date (TEXT)
+- info_date (TEXT)
+- info_source (TEXT)
+- model_yr (REAL)
+- layer_rk (INTEGER)
+- closure (INTEGER)
+- lead_critr (TEXT)
+- lead_sp_age (INTEGER)
+- age_detm (TEXT)
+- age_defn (TEXT)
+- layer_vol (INTEGER)
+- vol_type (TEXT)
+
+Table: all_pp_std_layer_origin
+------------------------------
+- juris_id (TEXT)
+- nfi_plot (INTEGER)
+- poly_id (TEXT)
+- layer_rk (INTEGER)
+- sample_date (TEXT)
+- info_date (TEXT)
+- info_source (TEXT)
+- stand_orig (TEXT)
+- regen_type (TEXT)
+- regen_yr (INTEGER)
+
+Table: all_pp_std_layer_treatment
+---------------------------------
+- juris_id (TEXT)
+- nfi_plot (INTEGER)
+- poly_id (TEXT)
+- layer_rk (INTEGER)
+- sample_date (TEXT)
+- info_date (TEXT)
+- info_source (TEXT)
+- treat_type (TEXT)
+- treat_yr (INTEGER)
+- treat_perct (INTEGER)
+
+Table: all_pp_std_layer_tree_sp
+-------------------------------
+- juris_id (TEXT)
+- nfi_plot (INTEGER)
+- poly_id (TEXT)
+- layer_rk (INTEGER)
+- sample_date (TEXT)
+- info_date (TEXT)
+- info_source (TEXT)
+- species_num (INTEGER)
+- genus (TEXT)
+- species (TEXT)
+- variety (TEXT)
+- percent (REAL)
+- height (REAL)
+- age (INTEGER)
+- min_age (INTEGER)
+- max_age (INTEGER)
+- exotic (TEXT)
+- exotic_source (TEXT)
+
+Table: all_pp_landuse
+---------------------
+- juris_id (TEXT)
+- nfi_plot (INTEGER)
+- poly_id (TEXT)
+- sample_date (TEXT)
+- info_date (TEXT)
+- info_source (TEXT)
+- poly_area (REAL)
+- landuse1 (TEXT)
+- landuse2 (TEXT)
+
+Table: all_pp_ownership
+-----------------------
+- juris_id (TEXT)
+- nfi_plot (INTEGER)
+- poly_id (TEXT)
+- sample_date (TEXT)
+- info_date (TEXT)
+- info_source (TEXT)
+- poly_area (REAL)
+- ownership (TEXT)
+
+Table: all_pp_protect_status
+----------------------------
+- juris_id (TEXT)
+- nfi_plot (INTEGER)
+- poly_id (TEXT)
+- sample_date (TEXT)
+- info_date (TEXT)
+- info_source (TEXT)
+- poly_area (REAL)
+- status (INTEGER)
+
+Table: all_pp_photo_plot
+------------------------
+- juris_id (TEXT)
+- nfi_plot (INTEGER)
+- utm_e (INTEGER)
+- utm_n (INTEGER)
+- utm_zone (INTEGER)
+- nomplot_size (REAL)
+
+
+
+From all_pp_std_layer_disturbance table:
+dist_agent - Identifies the cause of disturbance
+dist_yr - Year of disturbance
+mort_perct - Percentage of mortality
+mort_basis - Basis for mortality measurement
+agent_type - Type of disturbance agent
+
+From all_pp_std_layer_tree_sp table:
+genus and species - To identify conifer species
+percent - Species composition percentage
+
+From all_pp_poly_summ table:
+biomass_total_dead - Total dead biomass
+biomass_total_live - Total live biomass
+
+From all_pp_landcover table:
+veg_type - Vegetation type (to confirm conifer presence)

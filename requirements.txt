@@ -1,0 +1,10 @@
+geopandas>=0.9.0
+pandas>=1.2.0
+numpy>=1.19.0
+shapely>=1.7.0
+rasterio>=1.2.0
+tqdm>=4.60.0
+Rtree>=1.0.0
+ijson>=3.1.0
+fiona>=1.9.0  # Required by geopandas
+pyproj>=3.5.0  # Required for coordinate transformations

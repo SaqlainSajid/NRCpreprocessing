@@ -1,0 +1,76 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environment
+venv/
+ENV/
+.env
+
+# IDEs and editors
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+
+# Project specific
+*.db
+forest_inventory.db
+plots_before_2016/
+plots_from_2016/
+*.csv
+*.tiff
+*.met
+AlbertQGIS/
+all_pp_lc_provinces/
+all_pp_lc/
+all_gp_trees_mixed/
+all_gp_trees_mixed_provinces/
+output_rasters/
+indexes/
+mortality_data/
+prev/
+data/
+
+# Large geospatial data files
+*.geojson
+*.shp
+*.dbf
+*.shx
+*.prj
+*.sbn
+*.sbx
+*.cpg
+
+# Large data files
+*.pkl
+
+# Logs
+*.log
+logs/
+
+# Local development
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
