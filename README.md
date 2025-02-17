@@ -14,6 +14,8 @@ This tool processes geographic data across Canadian provinces, specifically desi
 
 - `main.py`: Main script for splitting data by UTM zones
 - `province_splitter.py`: Contains province boundary definitions and splitting logic
+- `create_biomass_raster.py`: Creates Raster
+- `convert_to_geojson.py`: Converts Shape file to geojson.py
 
 ## Usage
 
@@ -24,6 +26,15 @@ This tool processes geographic data across Canadian provinces, specifically desi
 ```bash
 python main.py
 ```
+4. Put your shape file in the root or specify the path, then run
+```bash
+python convert_to_geojson.py
+```
+5. modify the paths of your csv file and geojson file in create_biomass_raster.py then run 
+```bash
+python create_biomass_raster.py
+```
+This will create indices for biomass data and nfi ids for better search
 
 ### Input Data Requirements
 
@@ -38,21 +49,6 @@ The tool will create:
 - Separate CSV files for each UTM zone
 - Further subdivided files by province within each UTM zone
 
-## Supported Provinces
-
-- Alberta (AB)
-- British Columbia (BC)
-- Manitoba (MB)
-- New Brunswick (NB)
-- Newfoundland and Labrador (NL)
-- Nova Scotia (NS)
-- Northwest Territories (NT)
-- Nunavut (NU)
-- Ontario (ON)
-- Prince Edward Island (PE)
-- Quebec (QC)
-- Saskatchewan (SK)
-- Yukon (YT)
 
 ## Technical Details
 
